@@ -42,7 +42,6 @@ const TelaPaciente = () => {
     setIsModalOpen(false);
   };
 
-  // Função para deletar uma consulta
   const handleDeleteConsulta = (index) => {
     const novasConsultas = consultas.filter((_, i) => i !== index);
     setConsultas(novasConsultas);
@@ -74,7 +73,6 @@ const TelaPaciente = () => {
       </div>
 
       <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
-        <h2>Nova Consulta</h2>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label>Médico:</label>
